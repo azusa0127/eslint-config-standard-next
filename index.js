@@ -13,6 +13,7 @@ module.exports = {
     'arrow-parens': ['error', 'as-needed'],
     'block-scoped-var': 'warn',
     'class-methods-use-this': 'error',
+    'comma-dangle': ['error', 'only-multiline'],
     'computed-property-spacing': ['error', 'never'],
     'consistent-return': 'error',
     'dot-notation': 'warn',

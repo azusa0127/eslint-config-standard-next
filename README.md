@@ -9,8 +9,10 @@ An opinionated linting configuration based on StandardJS with ESNext rules ready
 * [semi-style](https://eslint.org/docs/rules/semi-style) : "error"
 
 #### No space before function parens `function foo()`
-* [space-before-function-paren](https://eslint.org/docs/rules/space-before-function-paren) : ["error", "never"],
+* [space-before-function-paren](https://eslint.org/docs/rules/space-before-function-paren) : ["error", "never"]
 
+#### Allows ES6 trailing commas
+* [comma-dangle](https://eslint.org/docs/rules/comma-dangle) : ['error', 'only-multiline']
 
 ## Extenstion to `eslint-config-standard`
 * Object Spread `const a = {...b, ...c}` (*Should be used with `-harmony` flag*)
