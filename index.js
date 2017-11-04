@@ -62,7 +62,7 @@ module.exports = {
         memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single']
       }
     ],
-    'space-before-function-paren': ['error', 'never'],
+    'space-before-function-paren': 'off',
     'switch-colon-spacing': 'error'
   }
 };
