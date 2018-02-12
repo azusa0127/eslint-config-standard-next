@@ -1,11 +1,10 @@
 module.exports = {
-  extends: ['standard'],
+  extends: 'standard',
   parserOptions: {
     ecmaFeatures: {
       experimentalObjectRestSpread: true,
-      impliedStrict: true
+      impliedStrict: true,
     },
-    sourceType: 'module'
   },
   rules: {
     'array-callback-return': 'warn',
@@ -59,10 +58,9 @@ module.exports = {
       {
         ignoreCase: true,
         ignoreMemberSort: false,
-        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single']
-      }
+        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
+      },
     ],
-    'space-before-function-paren': 'off',
-    'switch-colon-spacing': 'error'
-  }
+    'switch-colon-spacing': 'error',
+  },
 };

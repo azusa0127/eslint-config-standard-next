@@ -1,21 +1,30 @@
-# eslint-config-standard-next
-An opinionated linting configuration based on StandardJS with ESNext rules ready.
+# eslint-config-standard-next [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]
 
+[npm-image]: https://img.shields.io/npm/v/eslint-config-standard-next.svg
+[npm-url]: https://npmjs.org/package/eslint-config-standard-next
+[downloads-image]: https://img.shields.io/npm/dm/eslint-config-standard-next.svg
+[downloads-url]: https://npmjs.org/package/eslint-config-standard-next
+[standard-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
+[standard-url]: https://standardjs.com
 
-## Diff from `eslint-config-standard`
+#### An opinionated ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs) based on [JavaScript Standard Style](http://standardjs.com) with ES Next rules support.
+
+[![JavaScript Style Guide - Standard Style](https://cdn.rawgit.com/standard/standard/master/badge.svg)](http://standardjs.com)
+
+## Difference from [eslint-config-standard](https://npmjs.org/package/eslint-config-standard)
+
 #### Force semi-colons `;`
 
 * "[semi](https://eslint.org/docs/rules/semi)" : ["error","always"]
 * "[semi-style](https://eslint.org/docs/rules/semi-style)" : "error"
 
-#### No check on space before function parens `async () => {}`
-* "[space-before-function-paren](https://eslint.org/docs/rules/space-before-function-paren)" : "off"
-
 #### Allows ES6 trailing commas
+
 * "[comma-dangle](https://eslint.org/docs/rules/comma-dangle)" : ['error', 'only-multiline']
 
-## Extenstion to `eslint-config-standard`
-* Object Spread `const a = {...b, ...c}` (*Should be used with `-harmony` flag*)
+## Extenstion to [eslint-config-standard](https://npmjs.org/package/eslint-config-standard)
+
+* [Object Spread](https://github.com/tc39/proposal-object-rest-spread) (_You may need to use this with `-harmony` flag for node 8 or below_)
 * "[array-callback-return](https://eslint.org/docs/rules/array-callback-return)" : "warn"
 * "[arrow-body-style](https://eslint.org/docs/rules/arrow-body-style)" : ["error","as-needed"]
 * "[arrow-parens](https://eslint.org/docs/rules/arrow-parens)" : ["error","as-needed"]
@@ -62,25 +71,48 @@ An opinionated linting configuration based on StandardJS with ESNext rules ready
 * "[sort-imports](https://eslint.org/docs/rules/sort-imports)" : ["error",{"ignoreCase":true,"ignoreMemberSort":false,"memberSyntaxSortOrder":["none","all","multiple","single"]}]
 * "[switch-colon-spacing](https://eslint.org/docs/rules/switch-colon-spacing)" : "error"
 
-
 ## Install
+
 ### Global
+
 ```
 npm install -g eslint-config-standard-next eslint-config-standard eslint-plugin-standard eslint-plugin-promise eslint-plugin-import eslint-plugin-node
 ```
 
 ### Local
+
 ```
 npm install --save-dev eslint-config-standard-next eslint-config-standard eslint-plugin-standard eslint-plugin-promise eslint-plugin-import eslint-plugin-node
 ```
 
 ## Usage
-### Add extends to project .eslintrc
-```js
+
+Shareable configs are designed to work with the `extends` feature of `.eslintrc` files.
+You can learn more about
+[Shareable Configs](http://eslint.org/docs/developer-guide/shareable-configs) on the
+official ESLint website.
+
+To use this shareable config, first [install](#install) it globally or locally.
+
+Then, add this to your .eslintrc file:
+
+```
 {
-  "extends": ["standard-next"]
+  "extends": "standard-next"
 }
 ```
 
+_Note: We omitted the `eslint-config-` prefix since it is automatically assumed by ESLint._
+
+You can override settings from the shareable config by adding them directly into your
+`.eslintrc` file.
+
+## Changelog
+
+1.0.0
+
+* Updated the peer dependency versions and dropped rule `{"space-before-function-paren":"off"}` and `{sourceType: 'module'}` option.
+
 ## Lisence
+
 [MIT](./LICENSE)
