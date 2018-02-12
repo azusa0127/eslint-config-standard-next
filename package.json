@@ -1,10 +1,7 @@
 {
   "author": "Phoenix Song <github.com/azusa0127>",
-  "bugs": {
-    "url": "https://github.com/azusa0127/eslint-config-standard-next/issues"
-  },
-  "description": "An opinionated shared eslint-config for javascript ES5, ES2015, ES.next and React projects",
-  "homepage": "https://github.com/azusa0127/eslint-config-standard-next#readme",
+  "description": "An opinionated shared eslint-config for ES2015 or ES2017 projects",
+  "homepage": "https://github.com/azusa0127/eslint-config-standard-next",
   "keywords": [
     "JavaScript Standard Style",
     "check",
@@ -34,19 +31,13 @@
   "license": "MIT",
   "name": "eslint-config-standard-next",
   "peerDependencies": {
-    "eslint": "4.x.x",
-    "eslint-config-standard": "10.x.x",
-    "eslint-plugin-import": "2.x.x",
-    "eslint-plugin-node": "5.x.x",
-    "eslint-plugin-promise": "3.x.x",
-    "eslint-plugin-standard": "3.x.x"
+    "eslint": "4.x",
+    "eslint-config-standard": "11.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-node": "6.x",
+    "eslint-plugin-promise": "3.x",
+    "eslint-plugin-standard": "3.x"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/azusa0127/eslint-config-standard-next.git"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "repository": "github:azusa0127/eslint-config-standard-next",
   "version": "0.1.3"
 }
