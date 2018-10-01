@@ -31,12 +31,12 @@
   "license": "MIT",
   "name": "eslint-config-standard-next",
   "peerDependencies": {
-    "eslint": "4.x",
-    "eslint-config-standard": "11.x",
-    "eslint-plugin-import": "2.x",
-    "eslint-plugin-node": "6.x",
-    "eslint-plugin-promise": "3.x",
-    "eslint-plugin-standard": "3.x"
+    "eslint": ">=5.0.0",
+    "eslint-config-standard": ">=12.0.0",
+    "eslint-plugin-import": ">=2.13.0",
+    "eslint-plugin-node": ">=7.0.0",
+    "eslint-plugin-promise": ">=4.0.0",
+    "eslint-plugin-standard": ">=4.0.0"
   },
   "repository": "github:azusa0127/eslint-config-standard-next",
   "version": "1.0.1"
