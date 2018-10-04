@@ -2,7 +2,6 @@ module.exports = {
   extends: 'standard',
   parserOptions: {
     ecmaFeatures: {
-      experimentalObjectRestSpread: true,
       impliedStrict: true,
     },
   },
